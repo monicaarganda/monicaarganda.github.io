@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>LEARN Treasure Hunt</title>
+    <link rel="icon" Type="image/x-icon" href="https://freepngclipart.com/download/map/23476-treasure-map-hd-photo.jpg">
+    <link rel="stylesheet" href="hunt.css">
+  </head>
+  <body>
+    <h1 id="top"<b><i>The Masked Pirates</i></b></h1>
+    <h2>A Treasure Hunt Game</h2>
+    <h3 <b><i>Arghhh... let's get to scavenging mates!</i></b></h3>
+    <hr>
+    <img src="https://live.staticflickr.com/7647/16491939584_5416a41768_c.jpg" height="270px" alt="treasure map" class="center">
+    <div>
+      <p>   Ahoyy.. I see you found me game. Go on and hunt for me treasure, it's no trick go on and try to find me treasure. If you win you will get to sail away with me treasure, unscathed. BUT if you lose you will have to walk the plank as we sail off to our next quest. Savvy? Now I gotta run and hide me booty before you rob me blind!</p>
+    </div>
+    <h2 <b><i>Game Rules</i></b></h2>
+    <ul>
+      <li>Rule 1:Click the boxes to reveal what’s on the map</li>
+      <li>Rule 2:If you click on the Death Flag, you lose</li>
+      <li>Rule 3:If you click on the Money Bag, you win</li>
+    </ul id="restart">
+    <a href="#restart">
+      <button type="Button" onclick="location.reload()">Restart Game</button>
+    </a>
+    <div id="gameboard">
+    <table border=1 style="width: 50% ;text-align:center;margin-left:auto;margin-right:auto;">
+      <tr style="height:200px" >
+        <td id=0 onclick="treasureHunt(0)">?</td>
+        <td id=1 onclick="treasureHunt(1)">?</td>
+        <td id=2 onclick="treasureHunt(2)">?</td>
+      </tr>
+      <tr style="height:200px">
+        <td id=3 onclick="treasureHunt(3)">?</td>
+        <td id=4 onclick="treasureHunt(4)">?</td>
+        <td id=5 onclick="treasureHunt(5)">?</td>
+      </tr>
+      <tr style="height:200px">
+        <td id=6 onclick="treasureHunt(6)">?</td>
+        <td id=7 onclick="treasureHunt(7)">?</td>
+        <td id=8 onclick="treasureHunt(8)">?</td>
+      </tr>
+    </table>
+  </div>
+    <p id="outcome"></p>
+    <hr>
+    <footer>
+      | &copy LEARN 2022 August Jumpstart Bootcamp | Founders: Monica Arganda, Tyler Faris and Kyle Le |
+      <a href="#top" style="color:white">Back to top</a> |
+      <a href="https://www.learnacademy.org/jumpstart/" target="_blank" style="color:white">Jumpstart your Education</a> |
+    </footer>
+    <script type="text/javascript" src="hunt.js"></script>
+  </body>
+</html>

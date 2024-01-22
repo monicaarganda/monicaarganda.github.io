@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>LEARN Treasure Hunt</title>
+    <link rel="icon" Type="image/x-icon" href="https://freepngclipart.com/download/map/23476-treasure-map-hd-photo.jpg">
+    <link rel="stylesheet" href="hunt.css">
+     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+  </head>
+  <body>
+      <h1 id="top"><b><i>The Masked Pirates</i></b></h1>
+      <!-- <div id="treasure-pic">
+          <img src="https://i.etsystatic.com/40225139/r/il/ba0358/4739059132/il_794xN.4739059132_5l3r.jpg" height="400px" width="500px" alt="treasure map">
+    </div> -->
+    <hr>
+    <div class="game-blurp">
+        <p>   Ahoyy.. I see you found me game. Go on and hunt for me treasure, it's no trick go on and try to find me treasure. If you win you will get to sail away with me treasure, unscathed. BUT if you lose you will have to walk the plank as we sail off to our next quest. Savvy? Now I gotta run and hide me booty before you rob me blind!</p>
+    </div>
+    <hr>
+
+    <div id="rules-section">
+      <h3><b><i>Game Rules:</i></b></h3>
+      <ul>
+        <li>Rule 1: Click the boxes to reveal what’s on the map</li>
+        <li>Rule 2: If you find the treasure, you win!</li>
+        <li>Rule 3: If you find the bomb, you lose.</li>
+      </ul>
+      <h3>Good Luck!</h3>
+    </div>
+
+    <div id="gameboard">
+      <table>
+        <tr>
+          <td id=0 onclick="treasure(0)">?</td>
+          <td id=1 onclick="treasure(1)">?</td>
+          <td id=2 onclick="treasure(2)">?</td>
+        </tr>
+        <tr>
+          <td id=3 onclick="treasure(3)">?</td>
+          <td id=4 onclick="treasure(4)">?</td>
+          <td id=5 onclick="treasure(5)">?</td>
+        </tr>
+        <tr>
+          <td id=6 onclick="treasure(6)">?</td>
+          <td id=7 onclick="treasure(7)">?</td>
+          <td id=8 onclick="treasure(8)">?</td>
+        </tr>
+      </table>
+    </div>
+    <p id="outcome"></p>
+
+    <div id="bottom-section">
+      <h3 id="counter">Turns remaining: 5</h3>
+
+      <button type="button" onclick="location.reload()">Restart Game</button>
+
+      <br />
+      <br />
+
+      <footer>
+        | &copy LEARN Jumpstart Bootcamp | Founder: <strong></strong>Monica Arganda</strong> |
+        <a href="#top" style="color:white">Back to top</a> |
+        <a href="https://www.learnacademy.org/jumpstart/" target="_blank" style="color:white">Jumpstart your Education</a> |
+      </footer>
+      <br />
+    </div>
+
+    <script type="text/javascript" src="hunt.js"></script>
+  </body>
+</html>
